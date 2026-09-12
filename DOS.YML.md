@@ -24,6 +24,7 @@ The following settings are supported, the default value is the first one listed 
 | `video_card`    | Type of video card/machine to emulate            | __generic_svga__ / generic_hercules / generic_cga / generic_ega / generic_vga / tandy / pcjr / svga_s3_trio / svga_tseng_et3000 / svga_tseng_et4000 / svga_paradise_pvga1a |
 | `video_memory`  | Amount of video memory                           | __2048__ / 512 / 1024 / 4096                                |
 | `video_voodoo`  | Type of Voodoo 3dfx expansion card               | __v1_8mb__ / v1_4mb / none                                  |
+| `video_cga_composite` |  Force CGA composite mode on or off        | Default unset, can be set to true or false                  |
 | `sound_card`    | Type of sound card to emulate                    | __sb16__ / sb1 / sb2 / sbpro1 / sbpro2 / gameblaster / none |
 | `sound_port`    | The IO address of the sound card                 | __220__ / 240 / 260 / 280 / 2A0 / 2C0 / 2E0 / 300           |
 | `sound_irq`     | The IRQ number of the sound card                 | __7__ / 5 / 3 / 9 / 10 / 11 / 12                            |
@@ -31,6 +32,7 @@ The following settings are supported, the default value is the first one listed 
 | `sound_hdma`    | The High DMA number of the sound card            | __5__ / 6 / 7                                               |
 | `sound_midi`    | If a MPU401 MIDI Processing Unit is present      | __true__ / false / name of DOSX with a soundfont            |
 | `sound_mt32`    | If a MT-32 MIDI synthesizer module is present    | __false__ / true / name of DOSX with a MT-32 ROM (if set overrides `sound_midi`) |
+| `sound_sc55`    | If a SC-55 MIDI synthesizer module is present    | __false__ / true / name of DOSX with a SC-55 ROM (if set overrides `sound_midi`) |
 | `sound_gus`     | If a Gravis UltraSound expansion card is present | __false__ / true                                            |
 | `sound_tandy`   | If a Tandy Sound Device is present               | __false__ / true (always on with video_card: tandy)         |
 | `input_directmouse`    | Emulator support for direct mouse cursor mode                 | __false__ / true                          |
