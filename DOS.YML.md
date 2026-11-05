@@ -48,6 +48,12 @@ The following settings are supported, the default value is the first one listed 
 | `run_mount`     | Default disk image to mount (floppy or CD-ROM)   | Path relative to DOSZ, i.e. CD\GAME.CHD                     |
 | `run_input`     | Input sequence performed at startup              | [See below for details](#run-input-sequence)                |
 | `run_utility`   | Mark a configuration to not start automatically  | __false__ / true                                            |
+| `volume_sb`     | Volume of Sound Blaster output                   | __100__                                                     |
+| `volume_midi`   | Volume of MIDI output (SoundFont or MT-32)       | __100__                                                     |
+| `volume_adlib`  | Volume of Adlib music (FM/OPL)                   | __100__                                                     |
+| `volume_speaker`| Volume of the PC-Speaker                         | __100__                                                     |
+| `volume_cdrom`  | Volume of CD-ROM Audio output                    | __100__                                                     |
+| `volume_other`  | Volume of Tandy Sound System and others          | __100__                                                     |
 
 ## Run Input Sequence
 An input sequence is composed of typed characters, pressed keyboard keys or special commands.
