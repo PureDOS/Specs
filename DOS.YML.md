@@ -35,20 +35,20 @@ The following settings are supported, the default value is the first one listed 
 | `sound_sc55`    | If a SC-55 MIDI synthesizer module is present    | __false__ / true / name of DOSX with a SC-55 ROM (if set overrides `sound_midi`) |
 | `sound_gus`     | If a Gravis UltraSound expansion card is present | __false__ / true                                            |
 | `sound_tandy`   | If a Tandy Sound Device is present               | __false__ / true (always on with video_card: tandy)         |
-| `input_directmouse`    | Emulator support for direct mouse cursor mode                 | __false__ / true                          |
-| `input_mousespeed`     | Speed factor for all virtual mouse movement in percent        | __100__                                   |
-| `input_mousexfactor`   | Speed factor for horizontal virtual mouse movement in percent | __100__                                   |
-| `input_mousewheelup`   | Action to assign to rotating the mouse wheel up               | [Assignable Actions](#assignable-actions) |
-| `input_mousewheeldown` | Action to assign to rotating the mouse wheel down             | [Assignable Actions](#assignable-actions) |
-| `input_padmousespeed`  | Speed factor for mouse movement done by game pad in percent   | __100__                                   |
-| `input_pad_*`          | Defines a mapping for binding controls to a modern gamepad    | [See below for details](#gamepad-mapping) |
-| `input_wheel_*`        | Defines options for an action-wheel for additional inputs     | [See below for details](#action-wheel)    |
+| `input_directmouse`    | Emulator support for direct mouse cursor mode                 | __false__ / true                                |
+| `input_mousespeed`     | Speed factor for all virtual mouse movement in percent        | __100__                                         |
+| `input_mousexfactor`   | Speed factor for horizontal virtual mouse movement in percent | __100__ / 0 (disable) / only (disable vertical) |
+| `input_mousewheelup`   | Action to assign to rotating the mouse wheel up               | [Assignable Actions](#assignable-actions)       |
+| `input_mousewheeldown` | Action to assign to rotating the mouse wheel down             | [Assignable Actions](#assignable-actions)       |
+| `input_padmousespeed`  | Speed factor for mouse movement done by game pad in percent   | __100__                                         |
+| `input_pad_*`          | Defines a mapping for binding controls to a modern gamepad    | [See below for details](#gamepad-mapping)       |
+| `input_wheel_*`        | Defines options for an action-wheel for additional inputs     | [See below for details](#action-wheel)          |
 | `run_path`      | Default program to launch                        | Full path, i.e. C:\PROGRAM.EXE                              |
 | `run_boot`      | Default disk image to boot (floppy or hard disk) | Path relative to DOSZ, i.e. DISKS\DISK1.IMG                 |
 | `run_mount`     | Default disk image to mount (floppy or CD-ROM)   | Path relative to DOSZ, i.e. CD\GAME.CHD                     |
 | `run_input`     | Input sequence performed at startup              | [See below for details](#run-input-sequence)                |
 | `run_utility`   | Mark a configuration to not start automatically  | __false__ / true                                            |
-| `volume_sb`     | Volume of Sound Blaster output                   | __100__                                                     |
+| `volume_sb`     | Volume of Sound Blaster output in percent        | __100__                                                     |
 | `volume_midi`   | Volume of MIDI output (SoundFont or MT-32)       | __100__                                                     |
 | `volume_adlib`  | Volume of Adlib music (FM/OPL)                   | __100__                                                     |
 | `volume_speaker`| Volume of the PC-Speaker                         | __100__                                                     |
